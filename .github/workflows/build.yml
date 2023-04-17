@@ -26,10 +26,9 @@ jobs:
         with:
           new_branch: "gh-pages"
           message: "Update config.json"
-          add: "config.json"
+          add: "config.json '--force"
           author_name: "GitHub Actions"
           author_email: "actions@github.com"
-          tag_push: '--force'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
