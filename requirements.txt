@@ -1,5 +1,0 @@
-streamlit
-openpyxl
-plotly
-scipy
-watchdog
