@@ -26,7 +26,7 @@ jobs:
         with:
           new_branch: "gh-pages"
           message: "Update config.json"
-          push: "origin ${new_branch input} --force"
+          push: "origin gh-pages --force"
           author_name: "GitHub Actions"
           author_email: "actions@github.com"
         env:
