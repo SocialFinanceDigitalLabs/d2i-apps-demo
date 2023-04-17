@@ -55,7 +55,7 @@ test("encode and decode (an edge case of https://github.com/whitphx/stlite/issue
     entrypoint: "",
     requirements: [],
     files: {
-      "data/logo.svg": {
+      "data/logo.png": {
         content: {
           $case: "data",
           data: ia,

@@ -1,5 +1,11 @@
 ## Local development of `stlite`
 
+### Mount sharing editor
+
+```
+make all
+```
+
 ### Initialize the development environment
 
 ```

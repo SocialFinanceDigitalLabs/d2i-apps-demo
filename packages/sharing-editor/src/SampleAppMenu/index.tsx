@@ -4,7 +4,7 @@ import sampleAppManifests from "../sample-app-manifests.json"; // This file is g
 import { Link } from "react-router-dom";
 import { useSampleAppId, URL_SEARCH_KEY_SAMPLE_APP_ID } from "../router";
 import classNames from "classnames";
-import logo from "../logo.svg";
+import logo from "../logo.png";
 import styles from "./index.module.scss";
 
 interface SampleAppMenuProps {}
@@ -14,7 +14,7 @@ function SampleAppMenu(props: SampleAppMenuProps) {
   return (
     <div className={styles.container}>
       <img src={logo} alt="stlite sharing logo" className={styles.logo} />
-      <h2 className={styles.heading}>Samples</h2>
+      <h2 className={styles.heading}>D2i apps</h2>
       <ol className={styles.list}>
         {sampleAppManifests.map((sampleAppManifest) => (
           <Link
@@ -35,7 +35,7 @@ function SampleAppMenu(props: SampleAppMenuProps) {
       </ol>
       <div className={styles.footer}>
         <a
-          href="https://github.com/whitphx/stlite"
+          href="https://github.com/SocialFinanceDigitalLabs/d2i-apps-demo"
           target="_blank"
           rel="noreferrer"
           className={styles.githubIconLink}

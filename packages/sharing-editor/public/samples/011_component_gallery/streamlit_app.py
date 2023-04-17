@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Streamlit Component Gallery")
 
-st.image("https://docs.streamlit.io/logo.svg")
+st.image("https://docs.streamlit.io/logo.png")
 
 st.markdown("""
 This _stlite_ sample app contains the demos embedded on the Streamlit official document (https://docs.streamlit.io/).

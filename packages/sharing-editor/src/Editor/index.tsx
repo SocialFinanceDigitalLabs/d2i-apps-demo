@@ -16,6 +16,7 @@ import BinaryFileEditor from "./BinaryFileEditor";
 import FileUploader, { FileUploaderProps } from "./FileUploader";
 import AddButton from "./components/AddButton";
 import SaveButton from "./components/SaveButton";
+import PublishButton from "./components/PublishButton";
 import ThemeSelect from "./components/ThemeSelect";
 import styles from "./Editor.module.scss";
 import { isDarkMode } from "../color-mode";
@@ -223,6 +224,11 @@ function Editor({
           showTextEditor && (
             <Toolbar>
               <SaveButton onClick={handleSave} />
+              <PublishButton
+                onClick={() => {
+                  console.log("publish!");
+                }}
+              />
               <ThemeSelect isDark={isDarkTheme} onChange={setIsDarkTheme} />
             </Toolbar>
           )
