@@ -117,7 +117,7 @@ jobs:
 
         cat << _EOT_ > /tmp/website/index.html
         ---
-        redirect_to: "https://edit.share.stlite.net/"
+        redirect_to: "https://symphonious-toffee-f6d11e.netlify.app/"
         ---
         _EOT_
 
