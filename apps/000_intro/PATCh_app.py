@@ -7,7 +7,7 @@ image = Image.open('data/logo.png')
 st.image(image, caption='DTI logo')
 
 st.markdown("""
-### PATChadsasdasd
+### PATCh
 
 This editor uses **stlite** is a port of _Streamlit_ to Wasm, powered by Pyodide,
 that runs completely on web browsers.
