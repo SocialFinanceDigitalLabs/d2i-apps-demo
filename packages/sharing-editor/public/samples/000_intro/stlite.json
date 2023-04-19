@@ -1,4 +1,4 @@
 {
   "title": "Introduction",
-  "entrypoint": "streamlit_app.py"
+  "entrypoint": "PATCh_app.py"
 }

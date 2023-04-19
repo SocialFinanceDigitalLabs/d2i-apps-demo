@@ -1,13 +1,14 @@
 import streamlit as st
 from PIL import Image
 
-st.title("D2i apps: Create your own Quality CSC Data apps")
+st.title("PATCh: Create your own app")
 
 image = Image.open('data/logo.png')
 st.image(image, caption='DTI logo')
 
 st.markdown("""
-### D2i apps
+### PATCh
+
 This editor uses **stlite** is a port of _Streamlit_ to Wasm, powered by Pyodide,
 that runs completely on web browsers.
 

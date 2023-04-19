@@ -3,6 +3,8 @@
   flex-direction: column;
   height: 100%;
   overflow-y: scroll;
+  background-color: black;
+  color: white;
 }
 
 .logo {
@@ -34,9 +36,12 @@ $indicator-width: 2px;
   margin-bottom: 1rem;
   font-size: 1.1rem;
   border-left: $indicator-width solid #ddd;
+  color: #ddd;
+  transition: all 100ms ease;
 }
 .listItem:hover {
-  background-color: #eee;
+  background-color: #5c5c5c;
+  border-radius: 2px;
 }
 
 .list a {
@@ -44,7 +49,8 @@ $indicator-width: 2px;
 }
 
 .listItem.active {
-  border-left: $indicator-width solid var(--c-primary-focus);
+  border-left: $indicator-width solid var(--c-primary);
+  background-color: #474747;
 }
 
 $kofi-widget-height: 65px; // See https://storage.ko-fi.com/cdn/scripts/overlay-widget.js that is embedded at index.html
@@ -57,6 +63,8 @@ $kofi-widget-height: 65px; // See https://storage.ko-fi.com/cdn/scripts/overlay-
   display: inline-flex;
   align-items: center;
   font-size: 36px;
+  color: var(--c-primary);
+
 }
 .githubIconLink:hover {
   color: var(--c-primary-focus);

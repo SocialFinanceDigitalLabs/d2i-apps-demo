@@ -14,7 +14,7 @@ function SampleAppMenu(props: SampleAppMenuProps) {
   return (
     <div className={styles.container}>
       <img src={logo} alt="stlite sharing logo" className={styles.logo} />
-      <h2 className={styles.heading}>D2i apps</h2>
+      <h2 className={styles.heading}>PATCh</h2>
       <ol className={styles.list}>
         {sampleAppManifests.map((sampleAppManifest) => (
           <Link
