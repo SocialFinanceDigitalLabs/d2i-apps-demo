@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  margin: 0;
+  width: 10%;
+  margin: 1rem 0;
+}
+
+.heading {
+  margin: 1rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.list {
+  padding: 0;
+  margin: 0 1rem;
+  flex-grow: 1;
+
+}
+
+$itemVerticalPadding: 0.5rem;
+$indicator-width: 2px;
+
+.listItem{
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.button {
+  cursor: pointer;
+  list-style: none;
+  padding: $itemVerticalPadding 0.5rem $itemVerticalPadding 0.5rem;
+  margin: 0 0.5rem 0 0.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #ddd;
+  transition: all 100ms ease;
+}
+.button:hover {
+  background-color: #5c5c5c;
+  border-radius: 2px;
+}
+
+.list a {
+  text-decoration: none;
+}
+
+.listItem.active {
+  border-left: $indicator-width solid var(--c-primary);
+  background-color: #474747;
+}
+
+$kofi-widget-height: 65px; // See https://storage.ko-fi.com/cdn/scripts/overlay-widget.js that is embedded at index.html
+.footer {
+  margin: 1rem;
+  margin-bottom: calc( 6px + $kofi-widget-height );
+}
+
+.githubIconLink {
+  display: inline-flex;
+  align-items: center;
+  font-size: 36px;
+  color: var(--c-primary);
+
+}
+.githubIconLink:hover {
+  color: var(--c-primary-focus);
+}

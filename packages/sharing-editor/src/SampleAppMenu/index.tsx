@@ -13,8 +13,11 @@ function SampleAppMenu(props: SampleAppMenuProps) {
 
   return (
     <div className={styles.container}>
-      <img src={logo} alt="stlite sharing logo" className={styles.logo} />
+      <Link to="/">
+        <img src={logo} alt="stlite sharing logo" className={styles.logo} />
+      </Link>
       <h2 className={styles.heading}>PATCh</h2>
+      <h5 className={styles.subHeading}>available apps</h5>
       <ol className={styles.list}>
         {sampleAppManifests.map((sampleAppManifest) => (
           <Link

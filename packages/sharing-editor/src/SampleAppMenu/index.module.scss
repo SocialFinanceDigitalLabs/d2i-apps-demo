@@ -15,10 +15,17 @@
 }
 
 .heading {
-  margin: 1rem;
+  margin: 1rem 1rem 0rem 1rem;
   font-weight: 500;
   font-size: 1.5rem;
 }
+
+.subHeading {
+  margin: 0rem 1rem 1rem 1rem;
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+
 
 .list {
   padding: 0;

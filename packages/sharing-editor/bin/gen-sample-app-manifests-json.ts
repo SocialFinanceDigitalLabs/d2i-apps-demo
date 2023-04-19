@@ -6,8 +6,13 @@ import fsExtra from "fs-extra";
 import { Record, String, Array, Static } from "runtypes";
 import { parseRequirementsTxt } from "@stlite/common";
 
+const originalAppRootDirPath = path.join(
+  path.resolve(__dirname, "../../.."),
+  "./apps"
+);
 const rootDirPath = path.resolve(__dirname, "..");
-const sampleAppRootDirPath = path.join(rootDirPath, "./public/samples");
+const sampleAppRootDirPath = path.join(rootDirPath, "./public/apps");
+
 const srcDirPath = path.join(rootDirPath, "./src");
 const jsonOutputPath = path.join(srcDirPath, "./sample-app-manifests.json");
 
@@ -95,6 +100,9 @@ function extractSampleAppId(sampleAppDirName: string) {
 }
 
 async function main() {
+  fsExtra.copySync(originalAppRootDirPath, sampleAppRootDirPath, {
+    overwrite: true,
+  });
   // dir names are also considered as the IDs of the sample apps.
   const sampleDirNames = await fsPromises
     .readdir(sampleAppRootDirPath, {

@@ -17,6 +17,12 @@ all: init mountable sharing sharing-editor
 .PHONY: init
 init: git_submodules venv node_modules
 
+
+.PHONY: local
+local: git_submodules venv node_modules  kernel sharing-common common-react common
+
+
+
 VENV := ./.venv
 NODE_MODULES := ./node_modules
 
