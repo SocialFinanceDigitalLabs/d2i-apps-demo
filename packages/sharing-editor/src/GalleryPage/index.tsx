@@ -25,7 +25,7 @@ function Gallery() {
     <div className={styles.container}>
       <img src={logo} alt="stlite sharing logo" className={styles.logo} />
       <h2 className={styles.heading}>PATCh</h2>
-      <h5 className={styles.heading}>Open an app or edit it's source code</h5>
+      <h5 className={styles.heading}>Open an app or edit the source code</h5>
       <ol className={styles.list}>
         {sampleAppManifests.map((sampleAppManifest) => (
           <li className={styles.listItem}>
@@ -52,6 +52,16 @@ function Gallery() {
           </li>
         ))}
       </ol>
+      <div>
+        <Link
+          className={styles.button}
+          to={{
+            pathname: "editor",
+          }}
+        >
+          go to editor
+        </Link>
+      </div>
       <div className={styles.footer}>
         <a
           href="https://github.com/SocialFinanceDigitalLabs/d2i-apps-demo"
