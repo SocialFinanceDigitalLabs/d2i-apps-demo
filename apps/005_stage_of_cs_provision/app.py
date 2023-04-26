@@ -62,4 +62,4 @@ if uploaded_files:
             wrap=True)
     plt.xlabel('Stage of CS provision')
     plt.ylabel('Number of children')
-    st.pyplot(plt.figure())
+    st.pyplot(fig)
